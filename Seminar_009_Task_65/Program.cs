@@ -6,8 +6,9 @@ int num1 = GetNumberFromUser("Введите целое число M: ","Оши�
 Console.Clear();
 int num2 = GetNumberFromUser("Введите целое число N: ","Ошибка ввода!");
 FindSequence(num1, num2);
+Console.Write($"M = {num1}, N = {num2} -> ");
 if (num1 < num2) Console.WriteLine(FindSequence(num1, num2));
-else Console.WriteLine(FindSequence(num2, num1));
+else Console.WriteLine(FindSequence(num2, num1) + " ");
 
 //////////////////////////////////
 
